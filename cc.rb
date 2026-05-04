@@ -3,6 +3,7 @@ def shifty(current_character, ref_array, shift_value)
   ref_array.each_with_index do |character, index|
     if character == current_character
       old_index = index
+      break
     end
   end
 
