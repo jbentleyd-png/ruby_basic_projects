@@ -4,7 +4,10 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 def substrings (string, dictionary)
   output_hash = Hash.new(0)
   
-  input_array = string.chars
+
+
+
+  input_array = string.downcase.chars
   dictionary.each do |dict_word|
     dict_word_array = dict_word.chars
 
@@ -17,10 +20,4 @@ end
 
 puts substrings("below", dictionary)
 
-# puts ["b", "e", "l", "o", "w"] - ["l", "o", "w"] # it's in there
-# => be aka length equals word length minus dictionary length
-# puts ["b", "e", "l", "o", "w"] - ["r", "y", "a"] # it's not in there
-# => below aka length = word length aka word DOES equal word length minus dictionary length
-# puts ["b", "e", "l", "o", "w"] - ["o", "w", "n"] # it's kind of in there
-# => bel aka word does not equal word length minus dictionary length
-# 
+puts "Howdy partner, sit down! How's it going?".downcase.gsub(/[^a-zA-Z\s]/, '').split
