@@ -1,4 +1,4 @@
-# A method that takes an array of prices happening over time to determine hte best time to buy and the best time to sell.  
+# A method that takes an array of prices happening over time to determine the best time to buy and the best time to sell.  
 
 
 # turn an array of prices into an array of hashes recording the price and the day:
