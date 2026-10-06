@@ -17,3 +17,7 @@ The cipher ignores non-letter characters as it converts the string.
 
 Given a string (sentence) and a dictionary (list of words), this method will return how many times the dictionary words could be used as substrings in the words of the sentence.
 This method won't necessary work accuratey if there are any repeated letters in the dictionary words or the words of the sentence.
+
+## Bubble Sort:
+
+A basic sorting algorithm that sorts an array of numbers from lowest to highest by comparing adjacent numbers two at a time.

@@ -1,3 +1,5 @@
+# A basic sorting algorithm that sorts an array of numbers from lowest to highest by comparing adjacent numbers two at a time:
+
 def bubble_sort(array)
   return "Cannot sort 0-1 items." if array.length <= 1
   
