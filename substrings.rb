@@ -3,13 +3,12 @@
 
 
 def substrings (string, dictionary)
-  output_hash = Hash.new(0)
-  
   # make every word in the dictionary an array of letters:
   dictionary_arr = dictionary.map {|dict_word| dict_word.downcase.chars } 
 
-  # removes non-letters, and creates an array of each word in the string:
+  # removes non-letters, and creates an array words from the string:
   input_words = string.downcase.gsub(/[^a-zA-Z\s]/, '').split
+  output_hash = Hash.new(0)
 
   input_words.each do |input_word|
     word_arr = input_word.chars
